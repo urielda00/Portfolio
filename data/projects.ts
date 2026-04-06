@@ -51,7 +51,7 @@ export const projects: Project[] = [
 		highlights: [
 			"Built as a large independent project over several months",
 			"Client-server separation with modular architecture",
-			"Guest-to-user cart synchronization logic",
+			"End-to-end e-commerce flows for customers and admins",
 			"Admin panel with product CRUD and operational flows",
 			"JWT auth, password reset, and role-based access control",
 			"Dockerized full-stack environment with backend testing",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
 	},
 	{
 		slug: "geekcon-kaparot",
-		title: "Geekcon 2025 - Kaparot",
+		title: "Geekcon 2025 (Hackathon)",
 		shortDescription:
 			"An AI-powered interactive art installation combining computer vision, hardware control, and real-time ritual storytelling.",
 		fullDescription:

@@ -275,7 +275,7 @@ export const projects: Project[] = [
 		],
 		links: [
 			{ label: "Live Site", url: "https://image-to-pdf.netlify.app/" },
-			{ label: "GitHub", url: "https://github.com/" },
+			{ label: "GitHub", url: "https://github.com/urielda00/Personal-Portfolio-Website" },
 		],
 		images: [
 			{

@@ -3,7 +3,7 @@
 A personal portfolio website built to showcase my projects, skills, and development work in one place.
 
 ## Live Demo
-[View Portfolio](PASTE_YOUR_LIVE_LINK_HERE)
+[View Portfolio](https://uriel-dahan-portfolio.netlify.app/)
 
 ## About the Project
 

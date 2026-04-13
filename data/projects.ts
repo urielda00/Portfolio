@@ -135,6 +135,44 @@ export const projects: Project[] = [
 		],
 	},
 	{
+		slug: "agentium-forge",
+		title: "Agentium-Forge",
+		shortDescription:
+			"An industrial-grade AI multi-agent orchestrator for autonomous software development.",
+		fullDescription:
+			"Agentium-Forge is a sophisticated multi-agent system designed to automate and manage complex software development tasks. Built with LangGraph, it features a hierarchy of specialized AI agents including a Tech Lead for planning, a Controller for orchestration, and dedicated workers for code and infrastructure. The system incorporates a 'Manager Gate' for human approval and a secure 'Sudo Mode' for direct production interventions, ensuring reliability and control in autonomous workflows. Currently under active development.",
+		status: "Prototype",
+		featured: true,
+		year: "2026",
+		role: "Lead Architect & Developer - system design, agent orchestration, security implementation",
+		stack: [
+			"Python",
+			"LangGraph",
+			"LangChain",
+			"OpenAI (GPT-4o)",
+			"SQLite",
+			"Docker",
+			"Pydantic",
+		],
+		highlights: [
+			"Multi-agent architecture with specialized Tech Lead, Controller, and QA roles",
+			"Human-in-the-loop 'Manager Gate' for granular process oversight and approval",
+			"Secure 'Sudo Mode' for direct production deployment and destructive actions",
+			"Context isolation for each sub-task to ensure high accuracy and token efficiency",
+			"Full execution tracking and persistent state management via SQLite",
+			"Automated self-healing through iterative QA-feedback loops",
+		],
+		links: [
+			{ label: "GitHub", url: "https://github.com/urielda00/agentium-forge" },
+		],
+		images: [
+			{
+				src: "/images/projects/forge-architecture.png",
+				alt: "Agentium-Forge system architecture diagram",
+			},
+		],
+	},
+	{
 		slug: "eventlife",
 		title: "EventLife",
 		shortDescription:

@@ -238,6 +238,49 @@ export const projects: Project[] = [
 		],
 	},
 	{
+		slug: "chaos-to-sprint",
+		title: "Chaos to Sprint",
+		shortDescription:
+			"An AI-powered execution planner that turns messy meeting transcripts into structured sprint-ready action plans.",
+		fullDescription:
+			"Chaos to Sprint is a full-stack AI demo product that analyzes raw meeting transcripts from tools like Zoom, Google Meet, Teams, or Otter and converts them into a structured execution dashboard. The system extracts key decisions, action items, owners, priorities, risks, open questions, suggested GitHub issues, team update messages, and next best steps. It includes a React frontend, a Python FastAPI backend, server-side OpenAI integration, structured JSON output, backend validation, safety screening, and prompt-injection guardrails.",
+		status: "Live",
+		featured: false,
+		year: "2026",
+		role: "Full-stack AI product development - frontend, backend, prompt design, deployment, and product polish",
+		stack: [
+	"React",
+	"TypeScript",
+	"Python",
+	"FastAPI",
+	"OpenAI API",
+	"OpenAI Moderation API",
+	"Pydantic",
+	"Structured JSON Outputs",
+	"REST API",
+	"Render",
+	"Netlify",
+],
+		highlights: [
+			"Built as a focused AI-first product demo from idea to live deployment",
+			"Converts messy meeting transcripts into sprint-ready execution plans",
+			"Generates decisions, action items, owners, risks, GitHub issues, and team updates",
+			"Uses server-side OpenAI integration with structured output validation",
+			"Includes safety screening and prompt-injection guardrails for untrusted transcript input",
+			"Deployed with separate frontend and backend services using Netlify and Render",
+		],
+		links: [
+			{ label: "Live Site", url: "https://chaos-to-sprint-uriel-dahan.netlify.app/" },
+			{ label: "GitHub", url: "https://github.com/urielda00/chaos-to-sprint" },
+		],
+		images: [
+			{
+				src: "/images/projects/chaos-to-sprint.png",
+				alt: "Chaos to Sprint AI execution planner screenshot",
+			},
+		],
+	},
+	{
 		slug: "image-to-pdf",
 		title: "Image to PDF",
 		shortDescription:

@@ -25,6 +25,33 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
+		slug: "lab-booker",
+		title: "Lab Booker",
+		shortDescription:
+			"A production lab room booking system that I restructured, stabilized, and actively continue developing at work.",
+		fullDescription:
+			"Lab Booker is a professional internal system for managing laboratory room bookings and operational workflows. I received the project in a broken and disorganized state, then redesigned the logic and code structure, led a major refactor, and continued building features and improvements as part of active development to production. The project reflects real-world ownership, architecture decisions, iterative delivery, and ongoing collaboration.",
+		status: "Private",
+		featured: true,
+		year: "2026",
+		role: "Refactor leadership, architecture restructuring, active feature development",
+		stack: ["MERN", "Redis", "Docker", "Automation", "Node.js", "React", "MongoDB"],
+		highlights: [
+			"Took over an unstable codebase and redesigned its logic",
+			"Led a major structural refactor of the project",
+			"Worked on real workflows and production-oriented delivery",
+			"Integrated Redis, Docker, and operational automation",
+			"Still actively developed and pushed toward production",
+		],
+		links: [{ label: "live(private)", url: "http://lb.jce.ac/" }],
+		images: [
+			{
+				src: "/images/projects/lab-booker.png",
+				alt: "Lab Booker dashboard screenshot",
+			},
+		],
+	},
+	{
 		slug: "shopme",
 		title: "SHOPME",
 		shortDescription:
@@ -68,33 +95,6 @@ export const projects: Project[] = [
 			{
 				src: "/images/projects/shopme2.png",
 				alt: "SHOPME admin panel screenshot",
-			},
-		],
-	},
-	{
-		slug: "lab-booker",
-		title: "Lab Booker",
-		shortDescription:
-			"A production-facing lab room booking system that I restructured, stabilized, and actively continue developing at work.",
-		fullDescription:
-			"Lab Booker is a professional internal system for managing laboratory room bookings and operational workflows. I received the project in a broken and disorganized state, then redesigned the logic and code structure, led a major refactor, and continued building features and improvements as part of active development toward production. The project reflects real-world ownership, architecture decisions, iterative delivery, and ongoing collaboration.",
-		status: "Private",
-		featured: true,
-		year: "2026",
-		role: "Refactor leadership, architecture restructuring, active feature development",
-		stack: ["MERN", "Redis", "Docker", "Automation", "Node.js", "React", "MongoDB"],
-		highlights: [
-			"Took over an unstable codebase and redesigned its logic",
-			"Led a major structural refactor of the project",
-			"Worked on real workflows and production-oriented delivery",
-			"Integrated Redis, Docker, and operational automation",
-			"Still actively developed and pushed toward production",
-		],
-		links: [{ label: "GitHub", url: "https://github.com/urielda00/LabBookerProject" }],
-		images: [
-			{
-				src: "/images/projects/lab-booker.png",
-				alt: "Lab Booker dashboard screenshot",
 			},
 		],
 	},

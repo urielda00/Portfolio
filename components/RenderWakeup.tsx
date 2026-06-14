@@ -18,6 +18,7 @@ export default function RenderWakeup() {
     RENDER_WAKEUP_URLS.forEach((url) => {
       fetch(url, {
         method: "GET",
+        mode: "no-cors",
         cache: "no-store",
         keepalive: true,
       }).catch(() => {});

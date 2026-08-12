@@ -1,5 +1,4 @@
 import Hero from "@/components/sections/Hero";
-import CredibilityStrip from "@/components/sections/CredibilityStrip";
 import Experience from "@/components/sections/Experience";
 import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import AdditionalProjects from "@/components/sections/AdditionalProjects";
@@ -10,7 +9,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <CredibilityStrip />
       <Experience />
       <FeaturedProjects />
       <AdditionalProjects />

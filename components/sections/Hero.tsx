@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "./Hero.module.css";
 
 const proofTags = [
   "Production Experience",
@@ -7,10 +8,29 @@ const proofTags = [
   "Docker & Infrastructure",
 ];
 
+const proofPoints = [
+  {
+    title: "Production Developer",
+    description: "Building and maintaining live software systems",
+  },
+  {
+    title: "AI Automation",
+    description: "Real-world AI-assisted workflows and integrations",
+  },
+  {
+    title: "End-to-End Ownership",
+    description: "Architecture → Development → Deployment",
+  },
+  {
+    title: "Full-Stack + Backend",
+    description: "React · Node.js · MongoDB · Docker",
+  },
+];
+
 export default function Hero() {
   return (
     <section className="border-b border-zinc-200 bg-[#f8f8f6]">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:min-h-[100svh] md:px-8 md:py-20 lg:grid-cols-[minmax(0,1.55fr)_minmax(240px,0.75fr)] lg:gap-10">
+      <div className={`mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:px-8 md:py-16 lg:grid-cols-[minmax(0,1.55fr)_minmax(240px,0.75fr)] lg:gap-10 ${styles.heroContent}`}>
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#0b5e7a]">
             Uriel Dahan
@@ -18,7 +38,7 @@ export default function Hero() {
 
           <p className="mt-4 flex items-center gap-2 text-sm font-medium text-zinc-600">
             <span className="h-px w-5 bg-[#0b5e7a]" aria-hidden="true" />
-            Software Developer
+            Software Developer 
           </p>
 
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-zinc-950 sm:text-5xl md:text-[3.5rem]">
@@ -80,7 +100,7 @@ export default function Hero() {
 
           <p className="mt-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500">
             <span className="h-1.5 w-1.5 rounded-full bg-[#0b5e7a]" aria-hidden="true" />
-            B.Sc. Computer Science
+            B.Sc. Computer Science - Third-Year Student
           </p>
         </div>
 
@@ -95,6 +115,24 @@ export default function Hero() {
               sizes="(max-width: 639px) 192px, (max-width: 1023px) 224px, 256px"
               className="object-cover object-center"
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-zinc-200/90" aria-label="Professional highlights">
+        <div className="mx-auto max-w-6xl px-6 py-5 md:px-8 md:py-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+            {proofPoints.map((point, index) => (
+              <div
+                key={point.title}
+                className={index === 0 ? "" : "lg:border-l lg:border-zinc-200 lg:pl-8"}
+              >
+                <h2 className="text-sm font-semibold text-zinc-950">{point.title}</h2>
+                <p className="mt-2 text-[0.9375rem] leading-6 text-zinc-600">
+                  {point.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

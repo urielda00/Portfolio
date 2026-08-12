@@ -9,6 +9,8 @@ export default function FeaturedProjectCard({
   project,
 }: FeaturedProjectCardProps) {
   const previewImages = project.images.slice(0, 2);
+  const visibleStack =
+    project.slug === "practit" ? project.stack : project.stack.slice(0, 6);
 
   return (
     <article className="overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm">
@@ -43,6 +45,11 @@ export default function FeaturedProjectCard({
             <span className="rounded-full bg-zinc-900 px-3 py-1 text-xs font-semibold text-white">
               {project.status}
             </span>
+            {project.slug === "practit" && (
+              <span className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-semibold text-zinc-700">
+                Self-Hosted Backend
+              </span>
+            )}
             <span className="text-sm text-zinc-500">{project.year}</span>
           </div>
 
@@ -78,7 +85,7 @@ export default function FeaturedProjectCard({
           </div>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            {project.stack.slice(0, 6).map((item) => (
+            {visibleStack.map((item) => (
               <span
                 key={item}
                 className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"

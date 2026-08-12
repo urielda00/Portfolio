@@ -13,7 +13,7 @@ It includes selected featured projects, additional project cards, and links to s
 ## Features
 
 - Modern and responsive UI
-- Featured projects section
+- Flag projects section
 - Project cards with GitHub and live links
 - Clean layout for presenting skills and work
 - Built for easy browsing by recruiters and employers

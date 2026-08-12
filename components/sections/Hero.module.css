@@ -1,7 +1,7 @@
 @media (min-width: 48rem) and (min-height: 51.25rem) {
   .heroContent {
     min-height: calc(100svh - 7.5rem);
-    transform: translateY(-0.75rem);
+    transform: translateY(-1.25rem);
   }
 }
 

@@ -25,6 +25,49 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
+		slug: "practit",
+		title: "PractIt",
+		shortDescription:
+			"A production full-stack learning platform I built from scratch and operate end-to-end - including the application, backend, deployment and self-hosted infrastructure.",
+		fullDescription:
+			"PractIt is a full-stack adaptive vocabulary learning platform built from scratch with end-to-end ownership across product architecture, frontend, backend, infrastructure, deployment, and operations. It includes authentication and session management, adaptive practice flows, admin and content systems, payments and wallet logic, automated testing, CI, Dockerized services, and a self-hosted production backend running on my own Ubuntu HomeLab infrastructure.",
+		status: "Live",
+		featured: true,
+		year: "2026",
+		role: "Full ownership - product, architecture, backend, frontend, production infrastructure, and deployment",
+		stack: [
+			"React",
+			"Node.js",
+			"MongoDB",
+			"Docker",
+			"Ubuntu Server",
+			"Cloudflare Tunnel",
+			"GitHub Actions",
+			"CI/CD",
+		],
+		highlights: [
+			"Built and operated end-to-end from scratch",
+			"Self-hosted production backend on my Ubuntu HomeLab",
+			"Dockerized API and MongoDB with a secured Cloudflare Tunnel",
+			"MongoDB replica set, automated backups and restore verification",
+			"GitHub Actions CI with automated testing",
+			"Production load testing, monitoring and server hardening",
+			"Authentication, secure sessions, RBAC and admin systems",
+			"Payments, wallet flows and complex backend business logic",
+		],
+		links: [{ label: "Live Site", url: "https://practit.app/" }],
+		images: [
+			{
+				src: "/images/projects/practitHome.png",
+				alt: "PractIt learning platform home page",
+			},
+			{
+				src: "/images/projects/practit2.png",
+				alt: "PractIt student learning dashboard",
+			},
+		],
+	},
+	{
 		slug: "lab-booker",
 		title: "Lab Booker",
 		shortDescription:
@@ -99,6 +142,45 @@ export const projects: Project[] = [
 		],
 	},
 	{
+		slug: "talia-travels",
+		title: "Talia Travels",
+		shortDescription:
+			"A CMS-driven travel platform built for a real client, allowing trip content, pricing, dates, media and registration flows to be managed without changing code.",
+		fullDescription:
+			"Talia Travels is a custom client content platform built around a React frontend and Sanity CMS. I designed and implemented both the customer-facing experience and the structured content system behind it, allowing the client to independently manage active trip details, dates, pricing, itinerary content, media, FAQs, testimonials and site information. The platform also includes registration flows integrated with Netlify Forms and is deployed as a responsive RTL production website.",
+		status: "Live",
+		featured: false,
+		year: "2026",
+		role: "Full-stack client delivery - frontend architecture, CMS integration, content modeling, deployment and client-managed workflows",
+		stack: [
+			"React",
+			"TypeScript",
+			"Sanity CMS",
+			"Netlify",
+			"Netlify Forms",
+			"Responsive RTL",
+		],
+		highlights: [
+			"Built and delivered for a real client",
+			"Sanity CMS allows the client to manage and publish content independently",
+			"Structured trip data for dates, pricing, itinerary, media, FAQs and testimonials",
+			"Dynamic frontend driven by CMS content rather than hardcoded trip data",
+			"Integrated registration flows using Netlify Forms",
+			"Responsive RTL production deployment",
+		],
+		links: [],
+		images: [
+			{
+				src: "/images/projects/tal1.png",
+				alt: "Talia Travels website screenshot",
+			},
+			{
+				src: "/images/projects/tal2.png",
+				alt: "Talia Travels trip details screenshot",
+			},
+		],
+	},
+	{
 		slug: "geekcon-kaparot",
 		title: "Geekcon 2025 (Hackathon)",
 		shortDescription:
@@ -106,7 +188,7 @@ export const projects: Project[] = [
 		fullDescription:
 			"Built for Geekcon 2025, Kaparot is an interactive installation inspired by the traditional ritual and reimagined through AI, hardware, and live participant interaction. The system combines face analysis, gesture recognition, generated questions, personalized scoring, audio playback, session logging, and Arduino-controlled physical behavior. It was created as a hackathon-style project with strong experimentation, systems integration, and fast execution.",
 		status: "Code Only",
-		featured: true,
+		featured: false,
 		year: "2025",
 		role: "AI integration, software architecture, experimentation, rapid execution",
 		stack: [
@@ -239,44 +321,6 @@ export const projects: Project[] = [
 			{
 				src: "/images/projects/cards-game-1.png",
 				alt: "Cards Game screenshot",
-			},
-		],
-	},
-	{
-		slug: "agentium-forge",
-		title: "Agentium-Forge",
-		shortDescription:
-			"An industrial-grade AI multi-agent orchestrator for autonomous software development.",
-		fullDescription:
-			"Agentium-Forge is a sophisticated multi-agent system designed to automate and manage complex software development tasks. Built with LangGraph, it features a hierarchy of specialized AI agents including a Tech Lead for planning, a Controller for orchestration, and dedicated workers for code and infrastructure. The system incorporates a 'Manager Gate' for human approval and a secure 'Sudo Mode' for direct production interventions, ensuring reliability and control in autonomous workflows. Currently under active development.",
-		status: "Prototype",
-		featured: false,
-		year: "2026",
-		role: "Lead Architect & Developer - system design, agent orchestration, security implementation",
-		stack: [
-			"Python",
-			"LangGraph",
-			"LangChain",
-			"OpenAI (GPT-4o)",
-			"SQLite",
-			"Docker",
-			"Pydantic",
-		],
-		highlights: [
-			"Multi-agent architecture with specialized Tech Lead, Controller, and QA roles",
-			"Human-in-the-loop 'Manager Gate' for granular process oversight and approval",
-			"Secure 'Sudo Mode' for direct production deployment and destructive actions",
-			"Context isolation for each sub-task to ensure high accuracy and token efficiency",
-			"Full execution tracking and persistent state management via SQLite",
-			"Automated self-healing through iterative QA-feedback loops",
-		],
-		links: [
-			{ label: "GitHub", url: "https://github.com/urielda00/agentium-forge" },
-		],
-		images: [
-			{
-				src: "/images/projects/forge-architecture.png",
-				alt: "Agentium-Forge system architecture diagram",
 			},
 		],
 	},

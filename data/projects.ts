@@ -28,20 +28,19 @@ export const projects: Project[] = [
 		slug: "lab-booker",
 		title: "Lab Booker",
 		shortDescription:
-			"A production lab room booking system that I restructured, stabilized, and actively continue developing at work.",
+			"A production lab reservation platform I rebuilt from the ground up at Azrieli College of Engineering, replacing an unstable AI-generated codebase with a production-ready system integrated with additional college services and currently serving ~180 users.",
 		fullDescription:
-			"Lab Booker is a professional internal system for managing laboratory room bookings and operational workflows. I received the project in a broken and disorganized state, then redesigned the logic and code structure, led a major refactor, and continued building features and improvements as part of active development to production. The project reflects real-world ownership, architecture decisions, iterative delivery, and ongoing collaboration.",
+			"A production lab reservation platform I rebuilt from the ground up at Azrieli College of Engineering, replacing an unstable AI-generated codebase with a production-ready system integrated with additional college services and currently serving ~180 users.",
 		status: "Private",
 		featured: true,
 		year: "2026",
-		role: "Refactor leadership, architecture restructuring, active feature development",
+		role: "End-to-end ownership - architecture redesign, backend, frontend, authentication, scheduling workflows, deployment and production operations",
 		stack: ["MERN", "Redis", "Docker", "Automation", "Node.js", "React", "MongoDB"],
 		highlights: [
-			"Took over an unstable codebase and redesigned its logic",
-			"Led a major structural refactor of the project",
-			"Worked on real workflows and production-oriented delivery",
-			"Integrated Redis, Docker, and operational automation",
-			"Still actively developed and pushed toward production",
+			"Rebuilt the platform from the ground up and deployed it to production",
+			"Integrated with existing college systems",
+			"Designed authentication, permissions and scheduling workflows",
+			"Ongoing production ownership and feature development",
 		],
 		links: [{ label: "live(private)", url: "http://lb.jce.ac/" }],
 		images: [
@@ -98,9 +97,9 @@ export const projects: Project[] = [
 		slug: "ai-order-processing-automation",
 		title: "AI Order Processing Automation",
 		shortDescription:
-			"An AI-assisted business automation that processes incoming emails, identifies customer orders, extracts structured data and synchronizes it with a database and human-review workflow.",
+			"A production AI-powered business workflow that replaced a manual email-to-order process with automated classification, document extraction, structured data processing and human review.",
 		fullDescription:
-			"A real-world business automation designed to turn incoming email traffic into structured operational data. The workflow monitors Gmail, classifies messages using OpenAI, identifies customer orders, extracts structured order information from email content and supported PDF attachments, and stores the results in Supabase. It also manages processing states through Gmail labels, routes uncertain cases for human review, and writes automation logs for operational visibility.",
+			"A production AI-powered business workflow that replaced a manual email-to-order process with automated classification, document extraction, structured data processing and human review.",
 		status: "Private",
 		featured: true,
 		year: "2026",
@@ -116,12 +115,8 @@ export const projects: Project[] = [
 		],
 		highlights: [
 			"Automates the flow from incoming business email to structured order data",
-			"Uses OpenAI to classify messages and extract order information",
-			"Processes supported PDF order attachments as part of the workflow",
-			"Stores orders and operational data in Supabase",
-			"Routes uncertain or incomplete cases into a human-review workflow",
-			"Uses Gmail labels to track processed, completed and review-required messages",
-			"Maintains automation logs for visibility and troubleshooting",
+			"Uses AI to classify messages and extract structured information from emails and supported documents",
+			"Includes human-in-the-loop review, validation, error monitoring and exception handling",
 		],
 		links: [],
 		images: [
@@ -440,7 +435,7 @@ export const projects: Project[] = [
 			"Created to showcase profile, projects, and background",
 		],
 		links: [
-			{ label: "Live Site", url: "https://image-to-pdf.netlify.app/" },
+			{ label: "Live Site", url: "https://shiny-scone-983945.netlify.app/" },
 			{ label: "GitHub", url: "https://github.com/urielda00/Personal-Portfolio-Website" },
 		],
 		images: [

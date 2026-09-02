@@ -4,21 +4,21 @@ const roles = [
     company: "Azrieli College of Engineering",
     dates: "2026 - Present",
     description:
-      "Building, refactoring and maintaining production internal software systems, backend APIs, deployment flows and reliability improvements.",
+      "Building and owning production software and infrastructure, including end-to-end application development, systems used by hundreds of users, CI/CD, Linux environments and AI/HPC infrastructure.",
   },
   {
-    title: "Automation Developer",
+    title: "AI Automation Developer",
     company: "Place-IL & 8200 for Businesses",
     dates: "2026 - Present",
     description:
-      "Building AI-assisted automation workflows and integrations for real businesses.",
+      "Designing and implementing AI-powered business automations end-to-end - from process analysis and requirements to production workflows, integrations, monitoring and human review.",
   },
   {
     title: "Full-Stack Developer",
     company: "Daily-English Startup",
     dates: "2023 - 2024",
     description:
-      "Worked with React, TypeScript, Node.js and complex backend-driven data flows.",
+      "Developed React/TypeScript and Node.js product features, integrating backend data flows into user-facing functionality in an early-stage startup environment.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function Experience() {
             Professional Software Experience
           </h2>
           <p className="mt-4 max-w-xl text-base leading-7 text-zinc-600">
-            Production systems, AI automation and full-stack development across real organizations and products.
+            Production software, AI automation and backend systems across real organizations and products.
           </p>
         </div>
 

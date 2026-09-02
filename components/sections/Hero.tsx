@@ -42,15 +42,15 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-zinc-950 sm:text-5xl md:mt-3 md:text-[3.5rem]">
-            AI-first Full-Stack Developer
+            Software Developer focused on AI Automation,
             <span className="mt-1 block text-zinc-700 md:mt-2">
-              with a strong backend &amp; systems focus.
+              Backend &amp; Production Systems.
             </span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600 md:mt-5">
-            I build production software, AI-powered workflows and full-stack
-            systems - from architecture and backend logic to deployment and
+            I build production software, AI-powered workflows and backend
+            systems - from architecture and implementation to deployment and
             infrastructure.
           </p>
 

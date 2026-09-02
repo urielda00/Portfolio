@@ -11,9 +11,8 @@ export default function Contact() {
         </h2>
 
         <p className="mt-4 text-lg leading-8 text-zinc-600">
-          I&apos;m currently looking for a full-stack, backend, or product engineering
-          role where I can contribute through architecture, refactoring, system
-          thinking, and practical execution inside a strong product team.
+          I&apos;m interested in Software Engineering, Backend and AI Automation
+          roles focused on building and shipping real production systems.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

@@ -23,7 +23,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             alt={previewImage.alt}
             width={1200}
             height={800}
-            className="h-52 w-full object-cover"
+            className={`h-52 w-full ${
+              previewImage.fit === "contain"
+                ? "bg-zinc-950 object-contain"
+                : "object-cover"
+            }`}
           />
         ) : (
           <div className="flex h-52 items-center justify-center text-sm text-zinc-500">

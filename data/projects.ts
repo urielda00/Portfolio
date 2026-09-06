@@ -6,6 +6,7 @@ export type ProjectLink = {
 export type ProjectImage = {
 	src: string;
 	alt: string;
+	fit?: "cover" | "contain";
 };
 
 export type Project = {
@@ -328,6 +329,43 @@ export const projects: Project[] = [
 			{
 				src: "/images/projects/tal2.png",
 				alt: "Talia Travels trip details screenshot",
+			},
+		],
+	},
+	{
+		slug: "globalcart",
+		title: "GlobalCart",
+		shortDescription:
+			"An AI-powered customer support automation platform for e-commerce, built with FastAPI, React, MongoDB, and multi-agent workflows with deterministic guardrails.",
+		fullDescription:
+			"GlobalCart is an AI-driven e-commerce support and operations platform that analyzes customer requests, coordinates specialized agents, applies deterministic business guardrails, and produces structured resolutions with audit history and fallback behavior.",
+		status: "Live",
+		featured: false,
+		year: "2026",
+		role: "Full-stack development, AI workflow architecture, deployment and production operations",
+		stack: [
+			"FastAPI",
+			"React",
+			"MongoDB",
+			"Multi-agent AI",
+			"Docker",
+			"Cloudflare Tunnel",
+			"Netlify",
+		],
+		highlights: [
+			"Coordinates specialized agents with deterministic business guardrails",
+			"Produces structured tool actions and auditable resolutions",
+			"Includes fallback behavior for production reliability",
+			"Deployed with Docker on a HomeLab backend and Netlify frontend",
+		],
+		links: [
+			{ label: "Live Site", url: "https://globalcart-uriel-dahan.netlify.app/" },
+		],
+		images: [
+			{
+				src: "/images/projects/globalcart.png",
+				alt: "GlobalCart customer support resolution dashboard",
+				fit: "contain",
 			},
 		],
 	},
